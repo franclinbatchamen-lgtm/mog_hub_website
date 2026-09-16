@@ -1,0 +1,40 @@
+body {
+    background-color: #e0f4cc;
+    margin: 0px
+}
+
+header{
+    background-color: #eeed9f;
+    height: 150px;
+    position: relative;
+}
+
+#wrapper{
+    width: 960px;
+    background-color: #f9db89;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerLogo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    size-adjust: inherit;
+
+}
+
+#topLinks{
+    position:absolute;
+    width: 500px;
+    top: 100px;
+    right: 10px;
+}
+
+#topLinks li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-spacing-trim: space-all;
+}
