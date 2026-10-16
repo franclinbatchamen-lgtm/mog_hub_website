@@ -25,7 +25,7 @@ header{
 
 }
 
-#topLinks{
+#topLinks {
     position:absolute;
     width: 500px;
     top: 100px;
@@ -37,4 +37,140 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     text-spacing-trim: space-all;
+}
+
+a:link{
+    color: #ee4a09;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#f89279;
+}
+
+a:hover{
+    color: #9ace4d
+}
+
+.currentPage{
+    color: #ee4e09;
+    border-bottom: solid thin #ee4a09;
+}
+
+.clearFix{
+    clear: both;
+}
+
+main{
+    background-image: url(./images/heroImage.jpg);
+    margin-top: 100px;
+
+}
+
+img.headerLogo {
+  max-width: 100%; /* Ensures it never spills out of its parent element */
+  height: auto;    /* Automatically maintains the correct aspect ratio */
+  display: block;  /* Clears annoying default bottom inline gaps */
+}
+
+#homeInfo{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-size: 2em;
+    color: white;
+    padding-left: 30px;
+    border-bottom: solid thin #ee4a09;
+    padding-bottom: 15px;
+    margin: 0%;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding-left: 30px;
+}
+
+p{
+    font-size: 1em;
+    padding-left: 30px;
+}
+
+/* Tablet (max 768px) */
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    nav ul { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0.5rem; 
+    }
+
+    #headerLogo {
+        width: 80px;
+        top: 5px;
+        left: 5px;
+    }
+
+    #topLinks {
+        width: 300px;
+        top: 80px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding-left: 20px;
+    }
+}
+
+/* Mobile (max 600px) */
+@media screen and (max-width: 600px) {
+    #wrapper {
+        padding: 0 10px;
+    }
+
+    #headerLogo {
+        width: 60px;
+        top: 5px;
+        left: 5px;
+    }
+
+    #topLinks {
+        width: 200px;
+        top: 60px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+        padding-left: 10px;
+    }
 }
